@@ -20,6 +20,15 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Message"] = "Pagina criada por Matheus Sanches";
+
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            ViewData["Sobre"] = "Me chamo Matheus, sou desenvolvedor back-end C#, tenho 19 anos e estudo na FIAP";
+
             return View();
         }
 
